@@ -1,0 +1,74 @@
+\include{preamble}
+
+\begin{document}
+
+\include{title/title}
+
+\section{Introduction}
+
+This report is to describe the experiment that took place at the campus of the
+Royal Veterinary College on the 7th of August in collaboration with Andrew
+Symington and Ian <XXX: fill name here>
+
+
+\section{Experiment Description}
+The purpose of the experiment was to gather data on the behaviour of the radio
+channel in an Unmanned Air Vehicle environment. The data to be gathered were
+radio measurements in terms of Receiver Signal Strength Indicator (RSSI) and Bit
+Error Rate (BER). The data gathered were also measurements from the UAV sensors
+for acceleration, speed and orientation along with magnetometer readings.
+Finally these are to be fused with Global Position System data. The research
+focus is to identify and model the correlation between magnetometer and relative
+position and orientation data and radio measurements. The radio measurements
+were taken on WiFi and ZigBee on non overlapping channels.
+
+
+During the day we used used two <XXX: insert drone model here> to conduct the
+experiment. These had attached on them a Fit2PC Rev1.4 which was equipped with a
+PCIe Wireless Card <XXX:insert model here>. The UAVs were also carrying two
+prototyping boards which held an OrisenStamp Model 2013.
+
+We arrived at RVC at 9:00 and started preparing the UAVs for their flight.
+After mounting the boards on the UAVs, the GPS antenna at the top for best
+reception and the ultra sonic module at the bottom for better accuracy we
+proceeded to test the setup through the preflight checklist. Andrew had equipped
+them with two Fit2PCs however we soon realised that one would not boot. At that
+point we proceeded with a replacement of the Fit2PC with a working one. During
+the swap of the Fit2PC half the team proceeded in the field to setup the base
+station and start capturing GPS data, both RAW and the solution that rtknavi
+produced. The capture begun at 11:19 am.
+
+When the UAVs were fitted with working hardware we brought them in the field and
+started the final preflight checks to verify that they booted properly and they
+were capturing data properly. The OrisenStamp was capturing properly however the
+Fit2PCs were not booting properly again. We moved them back to the barn to
+identify the bug and fix the issue. We then decided to give up our slot to the
+next group so that we make better use of the day.
+
+After some debugging in the bootloader configuration we fixed the issue and
+proceeded in the field to perform our experiment. At <insert timestamp here> we
+started our experiment again. Due to the fact that we were testing the UAVs
+beforehand the batteries had a drop in their load. This allowed the UAvs to
+flighty for a duration of approximately 5 minutes. When Andrew and Ian landed
+the quadcopters we realised that one of the batteries had unclipped the external
+ZigBee antenna. We unplugged the power supply, put in new batteries, plugged in
+the antenna and restarted the experiment. At that point the SD cards were not
+erased, instead the log kept being appended.
+
+During the second attempt we flew the UAVs at a height of 13 meters. One was
+hovering and slightly moving due to wind while the other was trying to cover a
+box area under it as shown in Figure <XXX:insert figure here>. The flight time
+was in the order of 10 minutes before the stationary UAV (Foxtrot) gave a
+battery warning. Both Vehicles were landed and Foxtrot was shutdown. Our
+experiment was complete. At that point Mahdi requested to take some extra
+measurements using the other UAV (Golf). Golf was still powered up while we took
+some measurements lifting the UAV to roughtly two meters and then slowly taking
+it down by hand. Then we replaced <XXX: Johann please verify> Golf's battery
+pack and Andrew made some low altitude hovering for Mahdi's experiment. After
+that because the hovering was not stable enough due to wind conditions, we
+unplugged Golf's power supply and moved back into the barn. There Golf was
+powered up, (once to the best of my knowledge), and again Andrew flew it low for
+a few minutes. With that our day was concluded. We passed the data to Andrew
+who uploaded them on a dropbox folder found <XXX:here>.
+
+\end{document}
