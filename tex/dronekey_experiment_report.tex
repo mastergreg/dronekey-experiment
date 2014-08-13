@@ -22,7 +22,7 @@ focus is to identify and model the correlation between magnetometer and relative
 position and orientation data and radio measurements. The radio measurements
 were taken on WiFi and ZigBee on non overlapping channels.
 
-
+\section{Experiment Log}
 During the day we used used two <XXX: insert drone model here> to conduct the
 experiment. These had attached on them a Fit2PC Rev1.4 which was equipped with a
 PCIe Wireless Card <XXX:insert model here>. The UAVs were also carrying two
@@ -35,8 +35,11 @@ proceeded to test the setup through the preflight checklist. Andrew had equipped
 them with two Fit2PCs however we soon realised that one would not boot. At that
 point we proceeded with a replacement of the Fit2PC with a working one. During
 the swap of the Fit2PC half the team proceeded in the field to setup the base
-station and start capturing GPS data, both RAW and the solution that rtknavi
-produced. The capture begun at 11:19 am.
+station and start capturing GPS data, both RAW measurements and the solution
+that rtknavi produced were captured. The capture begun at 11:19 am. In order to
+verify and double check the capture settings the capture was stopped twice
+however the settings were not altered therefore the data captured can simply be
+appended and treated as one log.
 
 When the UAVs were fitted with working hardware we brought them in the field and
 started the final preflight checks to verify that they booted properly and they
@@ -48,12 +51,13 @@ next group so that we make better use of the day.
 After some debugging in the bootloader configuration we fixed the issue and
 proceeded in the field to perform our experiment. At <insert timestamp here> we
 started our experiment again. Due to the fact that we were testing the UAVs
-beforehand the batteries had a drop in their load. This allowed the UAvs to
-flighty for a duration of approximately 5 minutes. When Andrew and Ian landed
-the quadcopters we realised that one of the batteries had unclipped the external
-ZigBee antenna. We unplugged the power supply, put in new batteries, plugged in
-the antenna and restarted the experiment. At that point the SD cards were not
-erased, instead the log kept being appended.
+beforehand the batteries had a drop in their load. This allowed the UAVs to
+fly for a duration of approximately 5 minutes. When Andrew and Ian landed
+the quadcopters we realised that one of the batteries had pushed and unclipped
+the external ZigBee antenna on the moving UAV (Golf). We unplugged the power
+supply, put in new batteries, plugged in the antenna and restarted the
+experiment from the top. At that point the SD cards were not erased, instead the
+log kept being appended.
 
 During the second attempt we flew the UAVs at a height of 13 meters. One was
 hovering and slightly moving due to wind while the other was trying to cover a
